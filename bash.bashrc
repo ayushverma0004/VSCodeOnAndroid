@@ -133,10 +133,10 @@ PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\] '
 # alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
 
 ######### Original vs
-# alias vs='NODE_OPTIONS="--require /data/data/com.termux/files/home/VSCodeOnAndroid/android-as-linux.js" code-server --auth none & sleep 2;  am start --user 0 -n com.vscode/.SplashScreenActivity'
+alias vs='NODE_OPTIONS="--require /data/data/com.termux/files/home/VSCodeOnAndroid/android-as-linux.js" code-server --auth none & sleep 2;  am start --user 0 -n com.vscode/.SplashScreenActivity'
 
 ######### Modified vs to kill Code-server on Terminal Exit
-alias vs='NODE_OPTIONS="--require /data/data/com.termux/files/home/VSCodeOnAndroid/android-as-linux.js" code-server --auth none & sleep 2; am start --user 0 -n com.vscode/.SplashScreenActivity; trap "kill $(pgrep -f code-server)" EXIT'
+# alias vs='NODE_OPTIONS="--require /data/data/com.termux/files/home/VSCodeOnAndroid/android-as-linux.js" code-server --auth none & sleep 2; am start --user 0 -n com.vscode/.SplashScreenActivity; trap "kill $(pgrep -f code-server)" EXIT'
 
 # Extra command to safely kill process
 alias stop='kill $(pgrep -f code-server)'
