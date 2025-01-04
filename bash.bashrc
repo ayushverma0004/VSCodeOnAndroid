@@ -71,6 +71,10 @@ shopt -s extglob
 # PS1='\[\033[0;${bar_cr}m\]┌──(\[\033[1;${name_cr}m\]${user_name}${sym}\h\[\033[0;${bar_cr}m\])-[\[\033[0;${dir_cr}m\]\w\[\033[0;${bar_cr}m\]]
 # \[\033[0;${bar_cr}m\]└─\[\033[1;${end_cr}m\]\$\[\033[0m\] '
 
+# Default command line prompt.
+PROMPT_DIRTRIM=2
+PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\] '
+
 #### Aliases ##########################
 
 # enable color support of ls, grep and ip, also add handy aliases
