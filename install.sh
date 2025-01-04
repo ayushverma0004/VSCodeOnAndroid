@@ -196,6 +196,9 @@ fi
 echo -e "\033[34mInstalling code server and dependencies on Termux...\033[0m"
 apt-get install -y build-essential gdb binutils wget pkg-config code-server
 
+
+#################### Disable Below #######################
+
 prompt_for_languages() {
     echo -e "\033[34mEnter the numbers of the programming languages you want to install, separated by spaces, or enter 'None' to skip:\033[0m"
     echo "1) C#"
@@ -278,7 +281,9 @@ prompt_for_databases() {
     done
 }
 
-# Add Keyboard Shortcuts to Code Server
+################### Disabled #####################
+
+# Add Keyboard Shortcuts to Code Server ############################### CHECK FURTHER ###########################
 echo -e "\033[34mAdding Keyboard Shortcuts...\033[0m"
 mkdir -p ~/.local/share/code-server/User
 echo '{
@@ -300,9 +305,9 @@ else
     exit 1
 fi
 # Call the function to prompt for language installations
-prompt_for_languages
+# prompt_for_languages
 
 # Call the function to prompt for database installations
-prompt_for_databases
+# prompt_for_databases
 # Installation script complete message in blue
 echo -e "\033[34mInstallation script complete. Please type 'exit' and press Enter to close the Termux session.\033[0m"
